@@ -10,7 +10,7 @@ license=('MIT')
 depends=('libxext' 'libxft')
 makedepends=('ncurses')
 url="http://st.suckless.org"
-source=(http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz,
+source=(http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz
 	config.h)
 
 build() {
@@ -25,4 +25,5 @@ package() {
 	install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 	install -Dm644 README "$pkgdir/usr/share/doc/$pkgname/README"
 }
-md5sums=('4f8ae2737120a8cba34b23c6020fe51e')
+md5sums=('4f8ae2737120a8cba34b23c6020fe51e'
+         '05e2201aed78df2d4fff3def67764bdb')
