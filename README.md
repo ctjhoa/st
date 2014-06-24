@@ -1,7 +1,7 @@
-* Install
+#Install
 use install.sh
 
-* Update checksums
+#Update checksums
 Please use
 ```
 updpkgsums
