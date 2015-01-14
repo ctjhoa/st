@@ -3,7 +3,7 @@
 
 pkgname=st
 pkgver=0.5
-pkgrel=1
+pkgrel=2
 pkgdesc='A simple virtual terminal emulator for X.'
 arch=('i686' 'x86_64')
 license=('MIT')
@@ -11,12 +11,12 @@ depends=('libxext' 'libxft')
 makedepends=('ncurses')
 url="http://st.suckless.org"
 source=(http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz
-	config.h)
+        config.h)
 
 build() {
   cd $srcdir/$pkgname-$pkgver
   cp $srcdir/config.h config.h
-  make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
+	make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
 }
 
 package() {
