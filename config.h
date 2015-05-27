@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Monaco:size=12";
+static char font[] = "DejaVu Sans Mono:size=12";
 static int borderpx = 2;
 static char shell[] = "/bin/zsh";
 
