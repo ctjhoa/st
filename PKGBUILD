@@ -26,4 +26,4 @@ package() {
 	install -Dm644 README "$pkgdir/usr/share/doc/$pkgname/README"
 }
 md5sums=('1a926f450b4eacb7e2f5ac5b8ffea7c8'
-         '90ce5919be96de000bd9d9429b173490')
+         'd6d0017b094e6107e1b2d1ac3e6f4fc5')
