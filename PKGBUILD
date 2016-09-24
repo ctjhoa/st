@@ -2,8 +2,8 @@
 # Maintainer: Christoph Vigano <mail@cvigano.de>
 
 pkgname=st
-pkgver=0.6
-pkgrel=3
+pkgver=0.7
+pkgrel=1
 pkgdesc='A simple virtual terminal emulator for X.'
 arch=('i686' 'x86_64')
 license=('MIT')
@@ -12,8 +12,8 @@ makedepends=('ncurses')
 url="http://st.suckless.org"
 source=(http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz
         config.h)
-md5sums=('1a926f450b4eacb7e2f5ac5b8ffea7c8'
-         'd6d0017b094e6107e1b2d1ac3e6f4fc5')
+md5sums=('29b2a599cf1511c8062ed8f025c84c63'
+         'f78b030ebcb519d9e8a11e40cd1d6843')
 
 prepare() {
   cd $srcdir/$pkgname-$pkgver
