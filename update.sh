@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Fetch sources 
-curl -sSfL https://git.archlinux.org/svntogit/community.git/plain/trunk/PKGBUILD?h=packages/st --output PKGBUILD.def
-curl -sSfL https://git.archlinux.org/svntogit/community.git/plain/trunk/config.h?h=packages/st --output config.h.def
+curl -sSfL https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=st --output PKGBUILD.def
+curl -sSfL https://aur.archlinux.org/cgit/aur.git/plain/config.h?h=st  --output config.h.def
 
 
 vimdiff PKGBUILD PKGBUILD.def
