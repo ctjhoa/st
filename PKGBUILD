@@ -4,17 +4,17 @@
 # Contributor: Christoph Vigano <mail@cvigano.de>
 
 pkgname=st
-pkgver=0.8.4
+pkgver=0.8.5
 pkgrel=1
 pkgdesc='A simple virtual terminal emulator for X.'
-arch=('i686' 'x86_64' 'armv7h')
+arch=('i686' 'x86_64' 'armv7h' 'aarch64')
 license=('MIT')
 depends=(libxft)
 url=https://st.suckless.org
 source=(https://dl.suckless.org/$pkgname/$pkgname-$pkgver.tar.gz
         terminfo.patch
         README.terminfo.rst)
-sha256sums=('d42d3ceceb4d6a65e32e90a5336e3d446db612c3fbd9ebc1780bc6c9a03346a6'
+sha256sums=('ea6832203ed02ff74182bcb8adaa9ec454c8f989e79232cb859665e2f544ab37'
             'b282c0b963a24299d02e485af30260d237ca2e8e6b06282d385022c9c10a0950'
             '9a1b764cedd3a6288cc6601a3cdce06f4ab993f44de7aea5afd69511c13df7c0')
 _sourcedir=$pkgname-$pkgver
@@ -50,7 +50,7 @@ prepare() {
     msg+='that was just placed into the package directory to config.h and '
     msg+='modify it to change the configuration. Or just leave it alone to '
     msg+='continue to use default values.'
-    warning "$msg"
+    echo "$msg"
   fi
   cp "$_sourcedir/config.def.h" "$BUILDDIR"
 }
